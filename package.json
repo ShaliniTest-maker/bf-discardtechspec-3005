@@ -1,0 +1,36 @@
+{
+  "name": "nodejs-express-tutorial-server",
+  "version": "1.0.0",
+  "description": "Educational Node.js tutorial server demonstrating fundamental Express.js concepts through simple HTTP endpoints",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "tutorial",
+    "educational",
+    "http-server",
+    "web-development",
+    "learning",
+    "beginner-friendly"
+  ],
+  "author": "Tutorial Development Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.11.0"
+  },
+  "dependencies": {
+    "express": "5.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "tutorial-server"
+  },
+  "homepage": ".",
+  "bugs": {
+    "url": "tutorial-support"
+  }
+}
