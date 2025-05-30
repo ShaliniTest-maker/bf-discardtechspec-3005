@@ -1,0 +1,109 @@
+# Node.js Dependencies
+# Exclude Express.js and all npm package dependencies from version control
+node_modules/
+npm-debug.log*
+.npm
+.node_repl_history
+
+# Environment Configuration
+# Exclude environment variable files containing PORT and NODE_ENV settings
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Runtime and Log Files
+# Exclude Node.js runtime logs and temporary files
+*.log
+logs/
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Temporary Files
+# Exclude various temporary file patterns for clean development environment
+*.tmp
+*.temp
+.tmp/
+.temp/
+
+# Operating System Files
+# Cross-platform exclusions for development environment flexibility
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+# IDE and Editor Configuration
+# Development environment flexibility for educational accessibility
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# JetBrains IDEs (WebStorm, IntelliJ IDEA, etc.)
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+
+# Coverage and Testing
+# Exclude test coverage reports and test artifacts
+coverage/
+.nyc_output/
+.coverage
+.pytest_cache/
+
+# Build and Distribution
+# Exclude build artifacts and distribution files
+dist/
+build/
+out/
+
+# Package Lock Files (optional - some prefer to include)
+# Uncomment the following line if you want to exclude package-lock.json
+# package-lock.json
+
+# Optional: Dependency directories that might be used in tutorial extensions
+bower_components/
+jspm_packages/
+
+# Optional: Runtime data and cache directories
+.cache/
+.parcel-cache/
