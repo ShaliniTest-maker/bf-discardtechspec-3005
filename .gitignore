@@ -1,67 +1,84 @@
+# Node.js Tutorial Server .gitignore
+# Educational Express.js project exclusions for clean repository management
+
 # Node.js Dependencies
-# Exclude Express.js and all npm package dependencies from version control
+# Exclude npm packages and Express.js framework dependencies
 node_modules/
 npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
 .npm
-.node_repl_history
 
 # Environment Configuration
-# Exclude environment variable files containing PORT and NODE_ENV settings
+# Exclude environment variables and local configuration files
 .env
 .env.local
-.env.development
-.env.test
-.env.production
+.env.development.local
+.env.test.local
+.env.production.local
 
-# Runtime and Log Files
-# Exclude Node.js runtime logs and temporary files
-*.log
+# Runtime and Build Artifacts
+# Exclude generated files and temporary build outputs
+dist/
+build/
+*.tsbuildinfo
+.nyc_output
+
+# Logs and Debug Files
+# Exclude application logs and debugging information
 logs/
+*.log
 pids/
 *.pid
 *.seed
 *.pid.lock
 
+# Coverage and Testing
+# Exclude test coverage reports and temporary test files
+coverage/
+.coverage
+.nyc_output
+.cache
+*.lcov
+
 # Temporary Files
-# Exclude various temporary file patterns for clean development environment
+# Exclude system and application temporary files
 *.tmp
 *.temp
-.tmp/
-.temp/
+*.swp
+*.swo
+*~
 
 # Operating System Files
-# Cross-platform exclusions for development environment flexibility
+# Cross-platform OS-specific file exclusions
 
-# macOS
+# macOS system files
 .DS_Store
 .DS_Store?
 ._*
 .Spotlight-V100
 .Trashes
-Icon?
+ehthumbs.db
 
-# Windows
+# Windows system files
 Thumbs.db
 Thumbs.db:encryptable
-ehthumbs.db
-ehthumbs_vista.db
 Desktop.ini
 $RECYCLE.BIN/
 
-# Linux
+# Linux system files
 *~
-.fuse_hidden*
-.directory
-.Trash-*
+.nfs*
 
-# IDE and Editor Configuration
-# Development environment flexibility for educational accessibility
+# IDE and Editor Configurations
+# Development environment specific configurations
 
 # Visual Studio Code
 .vscode/
 *.code-workspace
 
-# JetBrains IDEs (WebStorm, IntelliJ IDEA, etc.)
+# IntelliJ IDEA / WebStorm
 .idea/
 *.iml
 *.ipr
@@ -74,7 +91,7 @@ $RECYCLE.BIN/
 # Vim
 *.swp
 *.swo
-*~
+.vimrc.local
 
 # Emacs
 *~
@@ -83,27 +100,47 @@ $RECYCLE.BIN/
 /.emacs.desktop.lock
 *.elc
 
-# Coverage and Testing
-# Exclude test coverage reports and test artifacts
-coverage/
-.nyc_output/
-.coverage
-.pytest_cache/
+# Runtime Directories
+# Exclude Node.js runtime specific directories
+.npm
+.eslintcache
+.yarn-integrity
+.pnp
+.pnp.js
 
-# Build and Distribution
-# Exclude build artifacts and distribution files
-dist/
-build/
-out/
+# Optional npm cache directory
+.npm
 
-# Package Lock Files (optional - some prefer to include)
-# Uncomment the following line if you want to exclude package-lock.json
-# package-lock.json
+# Optional REPL history
+.node_repl_history
 
-# Optional: Dependency directories that might be used in tutorial extensions
-bower_components/
-jspm_packages/
+# Output of 'npm pack'
+*.tgz
 
-# Optional: Runtime data and cache directories
-.cache/
-.parcel-cache/
+# Yarn Integrity file
+.yarn-integrity
+
+# parcel-bundler cache (if used in future)
+.cache
+.parcel-cache
+
+# ESLint cache
+.eslintcache
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Optional stylelint cache
+.stylelintcache
+
+# SvelteKit build / generate output (if extended)
+.svelte-kit
+
+# Educational Tutorial Specific
+# Exclude files that might be created during tutorial exercises
+tutorial-notes.txt
+test-requests.http
+example-output.txt
